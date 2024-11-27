@@ -1,0 +1,19 @@
+[package]
+name = "stealth-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eth-stealth-addresses = { path = "../eth-stealth-addresses"}
+hex = "0.4.3"
+k256 = "0.13.4"
+serde = "1.0.215"
+serde-wasm-bindgen = "0.6.5"
+wasm-bindgen = "0.2.95"
+
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2", features = ["js"] }
+
+[lib]
+crate-type = ["cdylib"]
