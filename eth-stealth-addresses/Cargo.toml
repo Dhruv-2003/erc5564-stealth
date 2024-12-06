@@ -1,0 +1,18 @@
+[package]
+name = "eth-stealth-addresses"
+version = "0.1.0"
+edition = "2021"
+authors = ["kassandra.eth 0xDADA@protonmail.com"]
+license = "MIT"
+description = "stealth addresses library for ethereum, implementing ERC-5564 over secp256k1 in rust"
+readme = "README.md"
+homepage = "https://github.com/kassandraoftroy/eth-stealth-addresses"
+repository = "https://github.com/kassandraoftroy/eth-stealth-addresses"
+keywords = ["ethereum", "eth", "privacy", "stealth", "secp256k1"]
+
+[dependencies]
+generic-array = "0.14.7"
+k256 = "0.13.1"
+rand = "0.8.5"
+sha3 = "0.10.8"
+wasm-bindgen = "0.2.95"
